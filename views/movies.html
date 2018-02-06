@@ -1,0 +1,37 @@
+<div class="container">
+
+  <h1 class="text-center">My Movies</h1>
+
+  <div class="movies-container">
+
+    <div class="movieContainer col-md-6 " ng-repeat="movie in movies">
+
+      <div class="movieHeader col-md-4">
+        <img class="movie-img" src="{{movie.Poster}}" alt="{{movie.name}}">
+      </div>
+      <div class="movieBody col-md-8">
+        <p class="movieTitle truncate-text">
+          <strong>{{movie.Title}}</strong>
+        </p>
+        <p class="movieTitle">
+          <strong>({{movie.Year}})</strong>
+        </p>
+        <p>
+          <strong>imdbID:</strong> {{movie.imdbID}}
+        </p>
+        <div class="buttons">
+          <button class="btn btn-primary btn-sm" ng-click="viewMovie(movie.imdbID)">More Info</button>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-primary btn-sm" ng-click="deleteMovie(movie.imdbID)">DeleteMovie</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+<!-- Container End -->

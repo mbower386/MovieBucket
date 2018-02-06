@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text-center {
+  color: white;
+}
+
+body {  
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Oxygen', sans-serif;
+  background: linear-gradient(
+    rgba(0,0,0, 0.6), 
+    rgba(0,0,0, 0.6) 
+  ),
+    url("../../images/Cinema-Chair-1.jpg");
+      
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; 
+}
+
+.site-info {
+  min-height: 200px;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 2;
+  padding: 20px;
+  
+}
+
+.screenshot-card {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 44%;
+  margin: 0 auto;
+  max-height: 300px;
+}
+
+.screenshot-img {
+  max-height: 250px;
+}
+
+.navBarBG {
+  background: #081c24;
+  height: 100px;
+  
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.navItem {
+  display: block;
+  font-weight: 700;
+  padding: 0 2.5%;
+  float: right;
+  padding-top: 15px;
+}
+
+.navItem a{
+  color: white;
+}
+
+.nav-buttons-left {
+  height: 100%;
+  padding-top: 25px;
+}
+
+.nav-buttons-right {
+  color: white;
+  padding-top: 25px;
+  height: 100px;
+}
+
+
+.site-logo {
+  height: 60%;
+}
+
+.login-form {
+  position: absolute;
+  padding: 20px;
+  min-width: 500px;
+  
+}
+
+.login-wrapper {
+  color: white;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.signup-form {
+  color: white;
+  padding: 20px;
+  background: linear-gradient(
+    rgba(0,0,0, 0.6), 
+    rgba(0,0,0, 0.6) 
+  );
+  position: absolute;
+  min-width: 400px;
+}
+
+.signup-wrapper {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.red-text {
+  clear: both;
+  color: red;
+}
+
+.online {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.bgGreen {
+  background: green;
+}
+
+.bgRed {
+  background: red;
+}
+
+.movieHeader {
+  
+  background-color: #bbb;
+  height: 190px;
+  padding-right: 0;
+  padding-left: 0;
+
+}
+
+.movieBody {
+  font-size: 16px;
+  line-height: 1.1; padding: 20px;
+    
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 190px;
+  width: 400 px;
+}
+
+.movieContainer {
+  color: white;
+ 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 190px;
+  line-height: 1.2;
+}
+
+.movie-img {
+  width: 100%;
+  height: 100%;
+}
+
+.movieTitle {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-wrapper {
+  color: white;
+  min-height: 100px;
+  padding: 20px;
+  
+  width: 70%;
+  margin: 0 auto;
+}
+
+.profile-card { 
+  color: white;
+  font-size: 18px;
+  
+  width: 60%;
+  margin: 0 auto;
+  height: 150px;
+}
+
+.movieNotFound {
+  margin: 0 auto;
+  width: 70%;
+  color: red;
+  font-size: 12px;
+}
+
+.result-container {
+  width: 75%;
+  margin: 0 auto; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.truncate-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.search-button {
+  padding-top: 22px;
+}
+
+.buttons button {  
+  padding-top: 10px;
+  display: block;
+  float: left;
+  margin: 0 12px;  
+}
+
+.result-buttons {
+  margin: auto;
+  width: 10%;
+  height: 100px;
+}
+
+.page-buttons {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.movie-card {  
+  font-size: 18px;
+  width: 95%;
+  margin: 0 auto;
+  height: 420px;
+}
+
+.movie-buttons {
+  margin: 30px auto;
+  width: 10%;
+  text-align: center;
+  height: 100px;
+}
+
+.movie-info {
+  color: white;
+  background: linear-gradient(
+  rgba(0,0,0, 0.6), 
+  rgba(0,0,0, 0.6) 
+);
+  height: 100%;
+  font-size: 12px;
+}
+.movie-poster {
+  height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.user-info {
+  height: 150px;  
+}
+
+.user-options {
+  height: 150px;
+}
+
+.user-buttons {
+  padding-top: 10px;
+  display: block;
+  margin: 0 12px;   
+  text-align: center;
+}
+
+.user-movie-container { 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+  line-height: 1.2;
+}
+
+.user-movies-container { 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.user-movie-title {
+  font-size: 16px;
+}
+
+.user-movie-img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-movie-body {
+  font-size: 14px;
+  color: white;
+  line-height: 1.1; 
+  background: linear-gradient(
+    rgba(0,0,0, 0.6), 
+    rgba(0,0,0, 0.6) 
+  );
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 400 px;
+}
+
+.user-movie-header {
+  
+  background-color: #bbb;
+  height: 200px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.user-movie-buttons {
+  padding-top: 10px;
+}
+.movie-title {
+  font-size: 14px;
+}

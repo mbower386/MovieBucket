@@ -1,0 +1,49 @@
+<div class="container">
+
+  <h1 class="text-center">Movie Info</h1>
+  <div class="movie-card">
+
+    <div class="movie-poster col-md-3">
+      <img class="movie-img" src="{{currentMovie.Poster}}" alt="{{movie.name}}">
+    </div>
+    <div class="movie-info col-md-9">
+      <h3 class="movie-title">{{ currentMovie.Title }} ({{ currentMovie.Year }})</h3>
+      <p>
+        <strong>IMDB Rating: </strong>{{ currentMovie.imdbRating }}
+      </p>
+      <p>
+        <strong>Genre: </strong> {{ currentMovie.Genre }}
+      </p>
+      <p>
+        Release Date: {{ currentMovie.Released }}
+      </p>
+      <p>
+        Runtime: {{ currentMovie.Runtime }}
+      </p>
+      <p>
+        Rating: {{ currentMovie.Rated }}
+      </p>
+      <p>
+        {{ currentMovie.Plot }}
+      </p>
+      <p>
+        <strong>Director: </strong>{{ currentMovie.Director }}
+      </p>
+      <p>
+        <strong>Actors: </strong>{{ currentMovie.Actors }}
+      </p>
+      <p>
+        <strong>Awards: </strong>{{ currentMovie.Awards }}
+      </p>
+    </div>
+  </div>
+
+  <div class="movie-buttons">
+    <div class="movie-info-buttons">
+      <div class="buttons">
+        <th>
+          <input type="button" class="btn btn-md btn-info" value="Go Back" onclick="history.back(-1)" />
+        </th>
+      </div>
+    </div>
+  </div>

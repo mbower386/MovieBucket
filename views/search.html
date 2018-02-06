@@ -1,0 +1,69 @@
+<div class="container">   
+
+  <div class="form-group">
+    <h1 class="text-center">Search For Movies</h1>
+   
+    <div class="search-wrapper">
+      <div class="search-title col-md-6">
+        Movie Title
+        <input type="text" class="form-control" placeholder="Name..." ng-model="searchTitle">
+      </div>
+      <div class="search-year col-md-3">
+        Year of Release
+        <input type="text" class="form-control" placeholder="Year..." ng-model="searchYear">
+      </div>
+      <div class="search-button col-md-3">
+        <button class="btn btn-info" ng-click="showMovies(1)">Search</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="result-container">
+    <div class="movieNotFound" ng-show="resultError">
+      </p>
+      <strong>Movie was not found. Please try again.</strong>
+      </p>
+    </div>
+
+    <div class="movieContainer col-md-6 " ng-repeat="movie in movieResults">
+
+      <div class="movieHeader col-md-4">
+        <img class="movie-img" src="{{movie.Poster}}" alt="{{movie.name}}">
+      </div>
+      <div class="movieBody col-md-8">
+        <p class="movieTitle truncate-text">
+          <strong>{{movie.Title}}</strong>
+        </p>
+        <p class="movieTitle">
+          <strong>({{movie.Year}})</strong>
+        </p>
+        <p>
+          <strong>imdbID:</strong> {{movie.imdbID}}
+        </p>
+        <div class="buttons">
+          <button class="btn btn-info btn-sm" ng-click="addMovie(movie)">Add Movie</button>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-primary btn-sm" ng-click="viewMovie(movie.imdbID)">More Info</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="result-buttons">
+  <div class="page-buttons" ng-show="pageNumbers">
+    <div class="buttons col-md-6">
+      <button class="btn btn-primary btn-sm" ng-click="previousMovies()">Previous</a></button>
+    </div>
+    <div class="buttons col-md-6">
+      <button class="btn btn-primary btn-sm" ng-click="nextMovies()">Next</a></button>
+    </div>
+
+  </div>
+</div>
