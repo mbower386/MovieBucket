@@ -35,7 +35,7 @@ app.service("movieService", function ($state, $http) {
 
   // Views the user's movie
   this.viewMovie = function (movie) {
-    $http.get(`http://www.omdbapi.com/?i=${movie}&plot=full&apikey=3c55883c`)
+    $http.get(`http://www.omdbapi.com/?i=${movie}&plot=full&apikey=`)
       .then(function (response) {
         console.log(response);
         _currentMovie = response.data;
